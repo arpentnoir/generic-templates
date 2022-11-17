@@ -146,7 +146,7 @@ export const CITESPermit: FunctionComponent<TemplateProps<CITESPermitDoc>> = ({ 
     issue_date: "15/11/2022",
     permit_no: "2022-AU-123456789",
   };
-  // const svg = template(data);
+  const svg = source; //template(data);
   return (
     <div>
       <img src={`data:image/svg+xml;utf8,${"<svg></svg>"}`} style={{ width: "100%", height: "auto" }} />
