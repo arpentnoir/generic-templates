@@ -1,6 +1,6 @@
 import { document } from "./sample";
 import React from "react";
-import { CITESPermit } from "./CITESPermit";
+import { CITESPermit } from "./CITESPermitTemplate";
 
 export default {
   title: "templates/CITES Permit",

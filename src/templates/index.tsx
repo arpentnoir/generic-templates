@@ -6,7 +6,7 @@ import { InvoiceTemplates } from "./Invoice";
 import { BillOfLadingGenericTemplates } from "./BillOfLadingGeneric";
 import { XMLRendererTemplate } from "./XmlRenderer";
 import { SimpleCooTemplates } from "./SimpleCoo";
-import { CITESPermit } from "./CITESPermit/CITESPermit"; 
+import { CITESPermitTemplates } from "./CITESPermit"; 
 
 export const registry: TemplateRegistry<any> = {
   BILL_OF_LADING: BillOfLadingTemplates,
@@ -16,5 +16,5 @@ export const registry: TemplateRegistry<any> = {
   INVOICE: InvoiceTemplates,
   XML_RENDERER: XMLRendererTemplate,
   SIMPLE_COO: SimpleCooTemplates,
-  CITES_PERMIT: CITESPermit,
+  CITES_PERMIT: CITESPermitTemplates,
 };

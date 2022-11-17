@@ -1,9 +1,9 @@
-import { CITESPermit } from "./CITESPermit";
+import { CITESPermit } from "./CITESPermitTemplate";
 
-export const templates = [
+export const CITESPermitTemplates = [
   {
     id: "CITESPermit",
     label: "CITESPermit",
-    template: CITESPermit
-  }
+    template: CITESPermit,
+  },
 ];
