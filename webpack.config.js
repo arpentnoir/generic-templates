@@ -83,6 +83,7 @@ module.exports = {
     modules: ["node_modules", path.resolve(__dirname, "src")],
     alias: {
       react: path.resolve("./node_modules/react"),
+      handlebars: "handlebars/dist/handlebars.min.js",
     },
     fallback: {
       crypto: require.resolve("crypto-browserify"),
