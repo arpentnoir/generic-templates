@@ -132,7 +132,7 @@ export const CITESPermit: FunctionComponent<TemplateProps<CITESPermitDoc>> = ({ 
   const data = {
     importer: `Luis Vuitton`,
     exporter: "Crazy Craig%27s Crocodile Clutches",
-    importing_country: "Switzerland",
+    importing_country: permitData.importingCountry,
     special_conditions: "Craig must acquit his permit somehow...",
     valid_until: "01/01/2023",
     management_authority: "Australian CITES Management Authority",
@@ -149,7 +149,7 @@ export const CITESPermit: FunctionComponent<TemplateProps<CITESPermitDoc>> = ({ 
   const svg = template(data);
   return (
     <div>
-      <img src={`data:image/svg+xml;utf8,${svg}`} style={{ width: "80%", height: "auto", textAlign: "center" }} />
+      <img src={`data:image/svg+xml;utf8,${svg}`} style={{ width: "100%", height: "auto", textAlign: "center" }} />
     </div>
   );
 };
