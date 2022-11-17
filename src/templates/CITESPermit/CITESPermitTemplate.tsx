@@ -60,6 +60,10 @@ export interface TradeLineItems {
 export interface CITESPermitDoc extends v3.OpenAttestationDocument {
   render: string;
   credentialSubject: {
+    importer: any;
+    exporter: any;
+    specialConditions: any;
+    importingCountry: any;
     iD: string;
     issueDateTime: string;
     name?: string;
@@ -130,10 +134,10 @@ export const CITESPermit: FunctionComponent<TemplateProps<CITESPermitDoc>> = ({ 
   const source = atob(rendererSource);
   const template = Handlebars.compile(source);
   const data = {
-    importer: `Luis Vuitton`,
-    exporter: "Crazy Craig%27s Crocodile Clutches",
+    importer: permitData.importer?.name,
+    exporter: permitData.exporter?.name,
     importing_country: permitData.importingCountry,
-    special_conditions: "Craig must acquit his permit somehow...",
+    special_conditions: permitData.specialConditions,
     valid_until: "01/01/2023",
     management_authority: "Australian CITES Management Authority",
     purpose: "Commercial",
