@@ -153,7 +153,7 @@ export const CITESPermit: FunctionComponent<TemplateProps<CITESPermitDoc>> = ({ 
   const svg = template(data);
   return (
     <div>
-      <img src={`data:image/svg+xml;utf8,${svg}`} style={{ width: "100%", height: "auto", textAlign: "center" }} />
+      <img src={`data:image/svg+xml;utf8,${svg}`} style={{ width: "100%", height: "auto", alignContent: "center" }} />
     </div>
   );
 };
