@@ -7,6 +7,7 @@ import { BillOfLadingGenericTemplates } from "./BillOfLadingGeneric";
 import { XMLRendererTemplate } from "./XmlRenderer";
 import { SimpleCooTemplates } from "./SimpleCoo";
 import { CITESPermitTemplates } from "./CITESPermit"; 
+import { AANZFTACertificateOfOrigin } from "./AANZFTACertificateOfOrigin/AANZFTACertificateOfOrigin";
 
 export const registry: TemplateRegistry<any> = {
   BILL_OF_LADING: BillOfLadingTemplates,
@@ -17,4 +18,5 @@ export const registry: TemplateRegistry<any> = {
   XML_RENDERER: XMLRendererTemplate,
   SIMPLE_COO: SimpleCooTemplates,
   CITES_PERMIT: CITESPermitTemplates,
+  AANZFTA_COO: AANZFTACertificateOfOrigin
 };
